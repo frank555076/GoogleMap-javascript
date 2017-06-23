@@ -3,6 +3,7 @@ var app = express();
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 var http = require('http').Server(app);
 
 var io = require('socket.io')(http);
@@ -13,6 +14,10 @@ var io = require('socket.io')(http);
 //   next();
 // });
 
+=======
+var io = require('socket.io')(http);
+
+>>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
 =======
 var io = require('socket.io')(http);
 
@@ -34,7 +39,10 @@ var collection, client;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
 =======
 >>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
 =======
@@ -52,8 +60,13 @@ function setupCollection(err, db) {
     client.on('connect', () => {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         console.log("MQTT connected");
         client.subscribe(deviceRoot + '+');
+=======
+        console.log("MQTT connected")
+        client.subscribe(deviceRoot + '+')
+>>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
 =======
         console.log("MQTT connected")
         client.subscribe(deviceRoot + '+')
@@ -72,6 +85,7 @@ function insertEvent(topic, payload) {
     var key = topic.replace(deviceRoot, '');
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 // 把PAYLOAD轉成JSON格式
     payload = JSON.parse(payload)
@@ -79,6 +93,8 @@ function insertEvent(topic, payload) {
         console.log("socket connected");
         io.sockets.emit('location', { longitude: payload.longitude, latitude: payload.latitude });
 =======
+=======
+>>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
 =======
 >>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
     // console.log(payload.toString());
@@ -101,6 +117,9 @@ function insertEvent(topic, payload) {
     });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
+=======
 >>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
 =======
 >>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
@@ -110,6 +129,7 @@ function insertEvent(topic, payload) {
             if (err) { console.log("Insert fail"); } // Improve error handling
         }
     )
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     console.log("database updated");
@@ -125,6 +145,8 @@ http.listen(app.get('port'), function(){
 =======
 =======
 >>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
+=======
+>>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
     console.log("database updated")
 }
 
@@ -132,6 +154,9 @@ http.listen(app.get('port'), function(){
 app.listen(app.get('port'), function() {
     console.log('app listening on port ' + app.get('port'));
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
+=======
 >>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
 =======
 >>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96

@@ -12,8 +12,13 @@ function handleSearchResults(results, status) {
                 map: map,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 icon: '\\images\\policeSign.png'
             }); 
+=======
+                // icon: 'C:\\Users\\ASUS-NB\\Desktop\\McdonaldsLogo.png'
+            });
+>>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
 =======
                 // icon: 'C:\\Users\\ASUS-NB\\Desktop\\McdonaldsLogo.png'
             });
@@ -39,6 +44,7 @@ function initialize(location) {
     // // socket.io 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     var socket = io();
     // var currentLocation = new google.maps.LatLng(24.99, location.coords.longitude)
     
@@ -50,12 +56,17 @@ function initialize(location) {
 =======
 =======
 >>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
+=======
+>>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
     // var socket = io();
     // socket.on('location', function(msg){
     //         // var currentLocation = new google.maps.LatLng(msg)
     //     });
     var currentLocation = new google.maps.LatLng(location.coords.latitude, location.coords.longitude)
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
+=======
 >>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
 =======
 >>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
@@ -64,6 +75,7 @@ function initialize(location) {
         zoom: 12,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -75,6 +87,8 @@ function initialize(location) {
             trafficLayer.setMap(map);
         }
 
+=======
+>>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
 =======
 >>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
 =======
@@ -92,7 +106,10 @@ function initialize(location) {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
 =======
 >>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
 =======
@@ -116,6 +133,7 @@ function initialize(location) {
     // traffic
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     // var trafficLayer = new google.maps.TrafficLayer();
     // $('#traffic').click(function() {
 
@@ -128,6 +146,8 @@ function initialize(location) {
 =======
 =======
 >>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
+=======
+>>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
     var trafficLayer = new google.maps.TrafficLayer();
     $('#traffic').click(function() {
 
@@ -138,6 +158,9 @@ function initialize(location) {
         }
     });
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
+=======
 >>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
 =======
 >>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
@@ -161,6 +184,7 @@ function initialize(location) {
     });
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         });
 
     var trafficLayer = new google.maps.TrafficLayer();
@@ -174,6 +198,8 @@ function initialize(location) {
     });
     
    
+=======
+>>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
 =======
 >>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
 =======
@@ -192,7 +218,11 @@ $(document).ready(function() {
 //     socket.on('location', function(msg){
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 //     console.log(msg)
+=======
+
+>>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
 =======
 
 >>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
