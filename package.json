@@ -11,16 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.3",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     "http": "0.0.0",
-=======
->>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
-=======
->>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
-=======
->>>>>>> 2d006b29c276162a0fffb4a62a12fcf167781a96
     "mongodb": "^2.2.29",
     "mqtt": "^2.9.0",
     "socket.io": "^2.0.3"
