@@ -32,8 +32,8 @@ function initialize(location) {
     
     socket.on('location', function(msg){
             var currentLocation = new google.maps.LatLng(parseFloat(msg.latitude), parseFloat(msg.longitude))
-            // console.log(msg.longitude)
-            // console.log(location.coords.latitude)
+            console.log(msg.longitude)
+            console.log(location.coords.latitude)
 
     var mapOptions = {
         center: currentLocation,
