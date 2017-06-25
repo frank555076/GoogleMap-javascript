@@ -18,8 +18,8 @@ var mqtt = require('mqtt');
 var mongodb = require('mongodb');
 var mongodbClient = mongodb.MongoClient;
 
-var mongodbURI = 'mongodb://127.0.0.1/CsxFinal';
-// var mongodbURI = 'mongodb://140.112.28.194/frankCSXFinal';
+// var mongodbURI = 'mongodb://127.0.0.1/CsxFinal';
+var mongodbURI = 'mongodb://140.112.28.194/frankCSXFinal';
 var deviceRoot = "demo/device/";
 var collection, client;
 
