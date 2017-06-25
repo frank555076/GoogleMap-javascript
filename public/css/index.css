@@ -1,3 +1,27 @@
    #map-canvas {
        height: 500px;
    }
+
+   @media screen and (max-width: 600px)
+{
+  .class
+  {
+    background: #ccc;
+  }
+}
+
+@media screen and (min-width: 900px)
+{
+  .class
+  {
+    background: #666;
+  }
+}
+
+@media screen and (max-device-width: 480px)
+{
+  .class
+  {
+    background: #000;
+  }
+}
