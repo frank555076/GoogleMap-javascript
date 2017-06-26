@@ -30,9 +30,10 @@ function initialize(location) {
     var socket = io();
     // var currentLocation = new google.maps.LatLng(24.99, location.coords.longitude)
     
-    socket.on('location', function(msg){
-            var currentLocation = new google.maps.LatLng(parseFloat(msg.latitude), parseFloat(msg.longitude))
-            console.log(msg.longitude)
+    // socket.on('location', function(msg){
+            // var currentLocation = new google.maps.LatLng(parseFloat(msg.latitude), parseFloat(msg.longitude))
+            var currentLocation = new google.maps.LatLng(location.coords.longitude, location.coords.latitude)
+            // console.log(msg.longitude)
             console.log(location.coords.latitude)
 
     var mapOptions = {
@@ -77,18 +78,6 @@ function initialize(location) {
     };
     var circle = new google.maps.Circle(circleOptions);
 
-    // traffic
-    // var trafficLayer = new google.maps.TrafficLayer();
-    // $('#traffic').click(function() {
-
-    //     if (trafficLayer.getMap()) {
-    //         trafficLayer.setMap(null);
-    //     } else {
-    //         trafficLayer.setMap(map);
-    //     }
-    // });
-
-    // weather
     var weatherLayer = new google.maps.weather.WeatherLayer({
         temperatureUnits: google.maps.weather.TemperatureUnit.CELSIUS
     });
@@ -105,7 +94,7 @@ function initialize(location) {
             cloudLayer.setMap(map);
         }
     });
-        });
+        // });
 
     var trafficLayer = new google.maps.TrafficLayer();
     $('#traffic').click(function() {
@@ -124,12 +113,3 @@ function initialize(location) {
 $(document).ready(function() {
     navigator.geolocation.getCurrentPosition(initialize);
 });
-
-// socket.io communication with server
-
-// $(function () {
-//     var socket = io();
-//     socket.on('location', function(msg){
-//     console.log(msg)
-//     });
-// });
